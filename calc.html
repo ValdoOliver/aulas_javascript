@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lógica de programação aula 25</title>
+    </head>
+    
+    <body>
+        
+        <h1>lógica de programação aula 25</h1>
+        
+        <button onclick='iniciarCalculo("+")'>+</button>
+        <button onclick='iniciarCalculo("-")'>-</button>
+        <button onclick='iniciarCalculo("*")'>*</button>
+        <button onclick='iniciarCalculo("/")'>/</button>
+        
+        <div id= 'resultado'></div>
+        
+        
+        <script>
+            
+            var resultado= document.querySelector('#resultado');
+            var n2= parseFloat(prompt('digite um número'));
+            
+            output(n2);
+
+           
+            
+            function iniciarCalculo(simbolo){
+                var n1= document.querySelector('#resultado').textContent;
+                
+                var n2= parseFloat(prompt('digite outro número'));
+                
+                var msg= calcular(simbolo, n1, n2);
+                
+                output (msg);
+                
+               
+            }
+
+            function output(mensagem){
+                resultado.innerHTML= mensagem
+            }
+            
+           
+            
+        </script>
+    
+    
+    </body>
+</html>

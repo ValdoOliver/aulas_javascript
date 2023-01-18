@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>logica de pro aula-1</title>
+
+
+    </head>
+    <body>
+
+
+
+      <h1>logica de pro aula - 11</h1>
+      
+      <button onclick="iniciarCalculo('+')">Somar</button>
+      <button onclick="iniciarCalculo('-')">Subtrair</button>
+      <button onclick="iniciarCalculo('*')">multiplicar</button>
+      <button onclick="iniciarCalculo('/')">dividir</button>
+      <button onclick="getRectArea()">limpar</button>
+     
+      
+      <div id="resultado"></div>
+      
+    
+      <script>
+
+      var n2 = prompt ('digite um numero')
+      n2 = parseFloat(n2);
+      
+         output(n2);
+
+         function iniciarCalculo(simbolo){
+                var n1= document.querySelector('#resultado').textContent;
+                
+                var n2= parseFloat(prompt('digite outro número'));
+                
+                var msg= calcular(simbolo, n1, n2);
+                
+                output (msg);
+        }
+ 
+       
+       function output(mensagem){
+       var resultado = document.querySelector('#resultado');
+       resultado.innerHTML = mensagem;
+       }
+
+       function calcular(simbolo, n1, n2){
+
+       var numeroCalculado = null;
+
+       switch(simbolo){
+        case '+':
+         numeroCalculado = parseFloat(n1) + parseFloat(n2);
+         break;
+         case '-':
+         numeroCalculado = n1 - n2;
+         break;
+         case '*':
+         numeroCalculado = n1 * n2;
+         break;
+         case '/':
+         numeroCalculado = n1 / n2;
+         break;
+        }
+        
+      
+      return numeroCalculado;
+
+
+    }
+
+
+
+
+    </script>
+  </body>
+</html>

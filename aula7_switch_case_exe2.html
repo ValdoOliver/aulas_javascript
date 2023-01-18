@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>logica de pro aula-1</title>
+
+
+    </head>
+    <body>
+      <h1>logica de pro aula-1</h1>
+      <script>
+
+   var jogador1 = prompt ("digite um numero");
+   jogador1 = parseInt (jogador1);
+
+   var jogador2 = prompt ("digite um numero");
+   jogador2 = parseInt (jogador2);
+
+  if(jogador1 === jogador2){
+    alert("vcs empatarm");
+   }else{ 
+    
+    var nSorteado = parseInt(Math.random() * 2);
+     alert("nSorteado: " + nSorteado);
+
+     if( (nSorteado === 0 && jogador1 < jogador2) || 
+      (nSorteado === 1 && jogador1 > jogador2 ) ){
+        alert(" jogador 1 ganhou"); 
+        } else {
+          alert("jogador 2 ganhou");
+        } 
+      }
+   
+  
+    
+   </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,23 @@
+
+Exercicio - 1
+perguntar o nome do usuario
+e dar boas vindas
+
+
+
+prompt"Qual seu nome?");
+alert("Bem-vindo");
+
+Pergunta para usuario = prompt
+
+
+ordem de resolução sem ()
+
+1º! não (not) - sinal que inverte
+
+
+2º - && E (and) = tudo tem que ser true para final 
+
+3º || ou (or) = qualquer verdade que aparecer é true no OU
+todos tem que ser falso para dar false
+

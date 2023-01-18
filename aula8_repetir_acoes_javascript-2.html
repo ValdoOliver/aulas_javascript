@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>logica de pro aula-1</title>
+
+
+    </head>
+    <body>
+
+
+
+      <h1>logica de pro aula-8</h1>
+
+
+      <button onclick="monstrarTabuada()">Cria tabuada</button>
+      <button onclick="limparTabuada()">limpar</button>
+      
+      <div id="output"></div>
+
+      <script>
+
+
+     function monstrarTabuada(){
+     //perguntar numero
+     var n = prompt('digite o numero');
+
+     limparTabuada();
+     //reaproveitando funcao limpartabuada
+     //converter o numero
+     n = parseFloat(n);
+     //criar variavel que servira de indice
+     var i = 1;
+     //enquanto indice menor ou igual a 1000 
+    // concatena a variavel mensagem
+    while(i <= 1000){
+      mensagem += n +' x ' + i +'=' + (n*i)+'<br>';
+      i++;
+    }
+
+    output.innerHTML = mensagem;
+  }
+
+     function limparTabuada(){
+      mensagem =''
+      output.innerHTML = mensagem;
+     }
+     var output = document.querySelector('#output');
+
+     var mensagem = '';
+
+    </script>
+
+
+    </body>
+
+
+
+</html>

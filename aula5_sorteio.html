@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>logica de pro aula-1</title>
+
+
+    </head>
+    <body>
+      <h1>logica de pro aula-1</h1>
+      <script>
+
+   var jogador1 = prompt ("digite um numero");
+   jogador1 = parseInt (jogador1);
+
+   var jogador2 = prompt ("digite um numero");
+   jogador2 = parseInt (jogador2);
+
+  if(jogador1 === jogador2){
+    alert("vcs empatarm");
+   } else { 
+    
+    var nSorteado = parseInt(Math.random()* 2);
+    if(nSorteado === 0){
+
+       if(jogador1 < jogador2){
+        Alert('Ganhou Jogador 1');
+       } else { 
+        Alert ('Ganhou jogador 2');
+       }
+
+       //*numero sorteado for 1, ganha quem escolhero numero Maior //*
+      } else{
+        if(jogador1 > jogador2){
+          Alert('Ganhou Jogador 1'); 
+        } else{
+          Alert('Ganhou Jogador 2'); 
+        }
+      } 
+    }
+
+ 
+
+
+
+
+   </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <div id= "soma">ok</div>
+    
+    
+    </div>
+    
+   
+    <script>
+      let numero = parseInt(prompt("digitar um numero"))
+      let numero2 = parseInt(prompt("digitar um numero"))
+      function calc() {
+          const x = numero;
+          const y = numero2;
+          const res = x + y;
+          console.log(res);
+          //select the div with id "soma"
+          const somaDiv = document.getElementById("soma");
+          //decrease the result by 10%
+          const decreasedRes = res / 10*9;
+          //set the innerHTML of that div to the value of decreasedRes
+          somaDiv.innerHTML = decreasedRes;
+        }
+        calc();
+      </script>
+</body>
+</html>
+

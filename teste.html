@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+        <title>lógica de programação aula 25</title>
+    </head>
+    
+    <body>
+        
+        <h1>lógica de programação aula 25</h1>
+        
+        <button onclick='iniciarCalculo("+")'>+</button>
+        <button onclick='iniciarCalculo("-")'>-</button>
+        <button onclick='iniciarCalculo("*")'>*</button>
+        <button onclick='iniciarCalculo("/")'>/</button>
+        
+        <div id= 'resultado'></div>
+        
+        
+        <script>
+            
+            var resultado= document.querySelector('#resultado');
+            var n2= parseFloat(prompt('digite um número'));
+            
+            output(n2);
+            
+            function iniciarCalculo(simbolo){
+                var n1= document.querySelector('#resultado').textContent;
+                
+                var n2= parseFloat(prompt('digite outro número'));
+                
+                var msg= calcular(simbolo, n1, n2);
+                
+                output (msg);
+                
+               
+            }
+            
+            
+            function output(mensagem){
+                resultado.innerHTML= mensagem
+            }
+            
+            
+            function calcular(simbolo, n1, n2){
+                
+              console.log(simbolo)
+
+if(simbolo !== '+' && simbolo  !== '-' && simbolo
+!== '*' && simbolo !== '/'){
+  alert('errado 1')
+  return 0;
+}
+
+if(isNaN(n1) || isNaN(n2)){
+  alert('errado')
+  return 0;
+
+  
+}
+
+              
+
+
+                var numeroCalculado= null;
+                
+                
+                switch(simbolo){
+                    
+                    case "+":
+                    numeroCalculado= parseFloat(n1) + parseFloat(n2);
+                    break;
+                    
+                    case "-":
+                    numeroCalculado= n1 - n2;
+                    break;
+                    
+                    case "*":
+                    numeroCalculado= n1 * n2;
+                    break;
+                    
+                    case "/":
+                    numeroCalculado= n1/n2;
+                    
+                }
+                
+                
+                return numeroCalculado;
+                    
+                    
+            }
+                
+            
+        </script>
+    
+    
+    </body>
+</html>
