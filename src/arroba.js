@@ -7,10 +7,11 @@ async function getUpdatedUsers() {
   try {
     const response = await fetch(API_URL);
     const data = await response.json();
-
+    console.log(data)
     const updatedUsers = data.map(user => {
       user.name = `@${user.name}`;
       return user;
+     
     });
 
     console.log(updatedUsers);
